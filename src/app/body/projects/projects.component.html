@@ -1,0 +1,27 @@
+<div id="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col col-xs-12 col-sm-8 col-sm-push-2">
+        <h2 class="title">Projects</h2>
+        <p class="subtitle">{{ projectInfo['myProjects'] }}</p>
+        <hr>
+        <!-- <app-projest-list></app-projest-list> -->
+        <div class="col-md-6 col-sm-12 col-xs-12" *ngFor="let project of userProjectItem">
+          <figure class="effect">
+            <img src="https://via.placeholder.com/350x150" alt="[Project title here]">
+
+            <figcaption>
+              <h3>[Project title here]</h3>
+              <p>[Project description here]</p>
+              <p><strong>Tags:</strong> <br>[List of skills]</p>
+              <a href="[Project link here]" target="_blank">View more</a>
+              <span class="icon">
+                  <span class="glyphicon glyphicon-new-window"></span>
+                </span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
